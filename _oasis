@@ -127,9 +127,9 @@ Library ppx_tyxml
   Modules: Ppx_tyxml_register
   BuildDepends: tyxml.ppx.internal
 
-Executable ppx_standalone
+Executable ppx_tyxml_standalone
   Build$: flag(ppx)
-  Install: false
+  Install$: flag(ppx)
   Path: ppx
   MainIs: ppx_tyxml_standalone.ml
   BuildDepends: tyxml.ppx
